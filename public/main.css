@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Overpass', serif;
+    min-height: 100vh;
+    background-color: var(--color-very-dark-blue);
+}
+
+header {
+    padding: 2rem;
+    border: 2px solid crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
