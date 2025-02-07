@@ -15,17 +15,28 @@ export const menuItems = items
     .join('');
 
 export function createHeader(title: string) {
-    const img = './assets/logo.png';
+    const img = './assets/logo_jd.webp';
     const cssClass = 'main-header';
-    const headerTemplate = `
+    const headerTemplate = /*html*/ `
         <header class="${cssClass}">
-        <img src=${img} width="120" alt="Logo" />
-        <h1 id="header1" data-id="1" class="h2">${title}</h1>
-        <nav>
+            <nav>
                 <ul>
+                    <li class="menu-header">
+                        <a href="./index.html">
+                            <img src=${img} width="119" height='50' alt="Logo" />
+                            <h1 id="header1" data-id="1" class="h1logo">
+                                ${title}
+                            </h1>
+                        </a>
+                    </li>
+                    <li class="menu-mobile">
+                        <a href="#">
+                            <span class="fa-solid fa-bars"></span>
+                        </a>
+                    </li>
                     ${menuItems}
                 </ul>
-        </nav>
+            </nav>
         </header>
     `;
     return headerTemplate;

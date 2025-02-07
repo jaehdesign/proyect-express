@@ -2,9 +2,9 @@ import { createHeader } from './partials/header.js';
 import { createHead } from './partials/head.js';
 import { createFooter } from './partials/footer.js';
 export const renderHomeHtml = () => {
-    const title = 'Inicio | Challenge Express';
-    const pageTitle = 'Challenge Express';
-    return `
+    const title = 'Inicio | JuananDesign';
+    const pageTitle = 'JuananDesign';
+    return /*html*/ `
         <!DOCTYPE html>
         <html lang="en">
             ${createHead(title)}
@@ -13,7 +13,7 @@ export const renderHomeHtml = () => {
 
                 <main>
                     <section>
-                        <h2>Texto lorem</h2>
+                        <h2>Creatividad a tu medida</h2>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Molestiae alias odio distinctio qui,
