@@ -3,7 +3,7 @@ import { ODMLite } from '../odm/odm-lite.js';
 import type { TypeODM } from '../odm/odm.type.js';
 import { Animal } from './animal.type.js';
 import type { Repository } from './repository.type.js';
-const debug = createDebug('demo:repository:animals');
+const debug = createDebug('demo:repository:animalss');
 
 export class AnimalFileRepo implements Repository<Animal> {
     odm: TypeODM<Animal>;
